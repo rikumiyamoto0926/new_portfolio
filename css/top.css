@@ -1,0 +1,167 @@
+/* 名前など */
+.Middle{
+    display: flex;
+}
+
+.name{
+    text-align: center;
+    width: 60vw;
+    height:80vh;
+}
+
+h1{
+    color: #31FF31;
+    font-size: 6vw;
+    font-family: Kiwi Maru;
+    letter-spacing: 0.15rem;
+    font-weight: 500;
+    margin-top:22.7vh ;
+    text-align: center;
+}
+
+/* タイピングアニメーション */
+
+.TextTyping span {
+    display: none;
+}
+
+/*文字列後ろの線の設定*/
+.TextTyping::after {
+    content: "|";
+    animation: typinganime .9s ease infinite;
+    /* color: yellow; */
+}
+
+@keyframes typinganime{
+    from{opacity:0}
+    to{opacity:1}
+}
+
+h2{
+    color: #31FF31;
+    font-size: 4vw;
+    letter-spacing: 1rem;
+    font-family: Courier New;
+    font-weight: 50;
+    margin-top:4vh ;
+}
+
+/* 階層構造 ツリー状 ライン */
+
+.line{
+    margin: 8.2vh 0%;
+}
+
+.structure{
+    text-align: center;
+    margin-top:6vh;
+    display: flex;
+    align-items: flex-start;
+}
+
+.structure p{
+    font-size: 2vw;
+    font-family: Kiwi Maru;
+    color: #31FF31;
+}
+
+.file p{
+    margin-bottom: 2vh;
+}
+
+.topfile img,.file li a img{
+    width: 12.5vw;
+}
+
+.file-line{
+    width: 9.5vw;
+}
+
+/* ツリー構造の画像のアニメーション */
+
+.line  {
+    overflow: hidden;
+    position: relative; 
+}
+
+.line:before {
+    animation: img-wrap 4s cubic-bezier(.4, 0, .2, 1) forwards;
+    background: black;
+    bottom: 0;
+    content: '';
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+@keyframes img-wrap {
+    100% {
+    transform: translateX(100%);
+    }
+}
+
+/* ファイルダウンロード風アニメーション */
+.works,.abouts,.contacts {
+    animation: fadeIn 5.0s ease 0s 1 normal;
+}
+@keyframes fadeIn { /*animation-nameで設定した値を書く*/
+
+    0% {opacity: 0.3} /*アニメーション開始時は不透明度0%*/
+
+    
+    
+    75%{opacity: 0.3;}
+    
+    /* 80%{opacity: 1;}
+    
+    85%{opacity: 0;}
+
+    90%{opacity: 0;}
+    
+    95%{opacity: 0;} */
+
+    76%{opacity: 0;}
+
+    100% {opacity: 1} /*アニメーション終了時は不透明度100%*/
+
+    }
+
+
+    
+    /* ファイルアニメーション */
+    
+    .file_item{
+        position: relative;
+        z-index: 10;
+        background-color: black;
+    transition: transform .3s ease-out;
+}
+.file_item:hover{
+    transform: scale(1.1);
+}
+
+.file_img{
+    opacity: 1;
+    transition: transform .3s ease-out, opacity .3s ease-out;
+}
+
+.file_item:hover > .file_link .file_img{
+    opacity: 1.0;
+}
+
+.topfile:hover > .file_img{
+    opacity: 1.0;
+}
+
+/* マウスカーソルカスタマイズ */
+.background{
+    cursor: url(../img/aim.svg),auto;
+}
+
+.structure a{
+    cursor: url(../img/super-aim.svg),auto;
+}
+

@@ -1,0 +1,276 @@
+.background{
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    height: 100vh;
+}
+
+.Middle{
+    width: 100vw;
+    height: 80vh;
+}   
+
+.header{
+    width: 100vw;
+    height: 10vh;
+    background-color: #31FF31;
+    display: flex;
+}
+
+h3{
+    font-size:4.0vw;
+    font-family: Kiwi Maru;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin-left: 1.5%;
+
+}
+
+
+.boxes{
+    margin-left:auto;
+    display: flex;
+}
+
+.boxes li{
+    width: 5.3vw;
+    height: 9vh;
+    background-color: black;
+    color: #31FF31;
+    margin:1% 1% 5% 0% ;
+    text-align: center;
+}
+
+.down,.up{
+    font-family: Kiwi Maru;
+    font-size: 175%;
+}
+
+/* 文字のアニメーション */
+
+.down {
+    animation-name:down;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 20.0s;}
+
+@keyframes down{
+
+    0% {
+        transform: translate(0,0vh);
+    }
+    
+    10% {
+        transform: translate(0,5vh);
+    }
+    
+    20% {
+        transform: translate(0,0vh);
+    }
+    
+    30% {
+        transform: translate(0,5vh);
+    }
+
+    40% {
+        transform: translate(0,0vh);
+    }
+
+    50% {
+        transform: translate(0,5vh);
+    } 
+
+    60% {
+        transform: translate(0,0vh);
+    }
+    
+    70% {
+        transform: translate(0,5vh);
+    }
+    
+    80% {
+        transform: translate(0,0vh);
+    }
+    
+    90% {
+        transform: translate(0,5vh);
+    }
+
+    100% {
+        transform: translate(0,0vh);
+    }
+}
+
+.up {
+    animation-name:up;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 20.0s;}
+
+@keyframes up{
+
+    10% {
+        transform: translate(0,0vh);
+    }
+    
+    20% {
+        transform: translate(0,5vh);
+    }
+    
+    30% {
+        transform: translate(0,0vh);
+    }
+
+    40% {
+        transform: translate(0,5vh);
+    }
+
+    50% {
+        transform: translate(0,0vh);
+    } 
+
+    60% {
+        transform: translate(0,5vh);
+    }
+    
+    70% {
+        transform: translate(0,0vh);
+    }
+    
+    80% {
+        transform: translate(0,5vh);
+    }
+    
+    90% {
+        transform: translate(0,0vh);
+    }
+
+    100% {
+        transform: translate(0,5vh);
+    }
+}
+
+/* 画像サイズ */
+.face img {
+    width: 4.8vw;
+    height: 9vh;
+}
+
+/* フッター */
+footer{
+    border-top:5px solid #31FF31 ;
+    display: flex;
+}
+
+footer ul {
+    display: flex;
+    margin-top: 2.0vh;
+    margin-left: -1vw;
+}
+
+.menu {
+    margin-left:4vw ;
+}
+
+.menu a{
+    position: relative;
+    color: #31FF31;
+    font-size: 2vw;
+    font-family: Kiwi Maru ;
+    /* border-bottom:solid 6px #31FF31; */
+    /* text-decoration: none; */
+}
+
+.menu a:hover {
+    animation-name: line;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:1;
+    animation-direction: normal;
+    animation-play-state:running;
+    animation-fill-mode:forwards;
+    animation-duration:0.5s;
+}
+
+@keyframes line{
+    0%{
+        border-bottom: solid 3px #31FF31;
+    }
+
+    10%{
+        border-bottom: solid 3px #000000;
+    }
+
+    20%{
+        border-bottom: solid 3px #31FF31;
+    }
+
+    30%{
+        border-bottom: solid 3px #000000;
+    }
+
+    40%{
+        border-bottom: solid 3px #31FF31;
+    }
+
+    50%{
+        border-bottom: solid 3px #000000;
+    }
+
+    60%{
+        border-bottom: solid 3px #31FF31;
+    }
+
+    70%{
+        border-bottom: solid 3px #000000;
+    }
+
+    80%{
+        border-bottom: solid 3px #31FF31;
+    }
+
+    90%{
+        border-bottom: solid 3px #000000;
+    }
+
+    100%{
+        border-bottom: solid 3px #31FF31;
+    }
+}
+/* フッターの日時 */
+.now{
+    display: flex;
+    margin-top: 2.7vh;
+    margin-left: 29vw;
+}
+
+
+#Month{
+    color: yellow;
+    font-family: Courier New;
+    font-size: 2vw;
+    margin-left: 0vw;
+    font-weight: 600;
+}
+
+#date{
+    color: yellow;
+    font-family: Courier New;
+    font-size: 2vw;
+    font-weight: 600;
+    margin-left: 1.5vw;
+}
+#RealtimeClock{
+    color: yellow;
+    font-family: Courier New;
+    font-size: 2vw;
+    margin-left: 0vw;
+    font-weight: 600;
+    margin-left: 1.0vw;
+}
+
+/* マウスカーソルカスタマイズ */
+
+.foot{
+    cursor: url(../img/aim2.svg),auto;
+}

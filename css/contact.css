@@ -1,0 +1,81 @@
+.word1{
+    color: #FF7F00;
+    font-size: 3.5vw;
+    text-align: center;
+}
+
+.word2{
+    position: absolute;
+    color: #00AFFD;
+    margin-left:65vw ;
+    margin-top: 4vh;
+}
+
+#form1{
+    margin-top:5vh;
+}
+
+.form{
+    color: #31FF31;
+    display: flex;
+    margin-left: 18.5vw;
+    margin-top: 3.5vh;
+    font-size: 2.5vw;
+}
+
+.form input{
+    background-color: #797979;
+    outline: solid 4px  #31FF31;
+    margin-left: 1.5vw;
+    margin-top: 2vh;
+}
+
+.name-form{
+    font-size: 2.5vw;
+}
+
+.email-form{
+    font-size: 1.5vw;
+    width: 30vw;
+}
+
+.message-form{
+    font-size: 1.5vw;
+    /* ここの行数を増やした */
+}
+
+textarea{
+    color: #31FF31;
+    margin-left: 1.5vw;
+    margin-top: 1vh;
+    font-size: 1vw;
+    background-color: #797979;
+    border: solid 4px #31FF31;
+}
+
+.button{
+    height: 12vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#send{
+    font-size: 3vw;
+}
+
+.send-button{
+    color: #31FF31;
+    /* outline: #31FF31;
+    outline-style: dotted; */
+    border:  solid 4px #31FF31;
+    border-radius: 10%;
+}
+
+.send-button:hover{
+    color: rgb(0, 0, 0);
+    border: #eaff31;
+    background-color: #31FF31
+}
+

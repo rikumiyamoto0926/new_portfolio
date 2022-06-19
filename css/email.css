@@ -1,0 +1,20 @@
+.Middle{
+    text-align: center;
+}
+
+.Middle p{
+    color:#FF7F00;
+    font-family: American Typewriter;
+    font-size: 7vw;
+}
+
+.Middle input{
+    color:#00FF00 ;
+    margin-top: 2vw;
+    font-size: 8vw;
+}
+
+.Middle input:hover{
+    color: yellow;
+    font-size: 9vw;
+}

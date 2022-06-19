@@ -1,0 +1,64 @@
+.m-head{
+    margin-left: 4.5vw;
+    height: 12vh;
+    padding-top: 3.8vh;
+}
+
+h1{
+    color: #00FF00;
+    font-family: DecoType Naskh;
+    font-size: 3vw;
+}
+
+.red-box{
+    display: flex;
+    background-color:#5F0000 ;
+    width: 95vw;
+    height: 60vh;
+    margin-left: 2.5vw;
+}
+
+
+.green-box{
+    background-color: #002F00;
+    color:#BAFF00;
+    width: 60vw;
+    height:58vh;
+    margin-top: 1vh;
+    margin-left: 0.5vw;
+}
+
+h2{
+    font-size: 2.65vw;
+    margin-left:3.5vw;
+    margin-top: 3.5vh;
+    font-family: DecoType Naskh;
+}
+
+.green-box ul{
+    font-size: 1.5vw;
+    font-family: DecoType Naskh;
+    margin-left:16vw ;
+    margin-top: 5.5vh;
+}
+
+.green-box li{
+    margin-top:3vh ;
+}
+
+.pentagon{
+    margin-top: 5vh;
+    margin-left: 2vw;
+}
+.pentagon img{
+    width: 31vw;
+}
+
+
+.Middle a{
+    color: #00FF00;
+    float: right;
+    font-size: 1.5vw;
+    margin-top: 2.5vh;
+    margin-right: 3vw;
+}
