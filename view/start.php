@@ -50,8 +50,8 @@
     </div>
 
     
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
-    <script src="/new_portfolio/js/start.js"></script>
+    <script src="../js/start.js"></script>
 </body>
 </html>
