@@ -13,6 +13,7 @@ include_once('../new_portfolio/view/start.php');
 </head>
 <body>
 
-    <div class="riku">おにぎり</div>    
+    <div class="riku">おにぎり</div>  
+    <a href="../new_portfolio/view/start.php">リンク</a>
 </body>
 </html>
