@@ -52,7 +52,7 @@
                     </a>
                 </li>
                 <li><img src="../img/works/page4.png" alt="自作ポートフォリオ">
-                    <a href="https://www.bariuma.biz/" class="mask">
+                    <a href="https://riku-new-portfolio.herokuapp.com/" class="mask">
                         <div class="caption">自作ポートフォリオ</div>
                     </a>
                 </li>
