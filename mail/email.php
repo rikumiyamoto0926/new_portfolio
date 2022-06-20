@@ -71,7 +71,7 @@ if ($error != '') {
     $mailsend = mb_send_mail($mail_to, $mail_subject, $mail_body, $mail_header);
     
     if($mailsend == true) {
-        echo '<p>Sent a message</p>';
+        echo '<p>Thank you for the message</p>';
         echo '<form method="post" action="../view/contact.php">';
         echo '<input type="submit" name="backbtn" value=" back to the contact">';
         echo '</form>';
