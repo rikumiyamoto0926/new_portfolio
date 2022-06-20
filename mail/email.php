@@ -28,60 +28,60 @@
 
         <div class="Middle">
 
-        <?php
-$action = $_POST['action'];
-$name = htmlspecialchars($_POST['name'],ENT_QUOTES);
-$email = htmlspecialchars($_POST['email'],ENT_QUOTES);
-$message = htmlspecialchars($_POST['message'],ENT_QUOTES);
+<?php
+    $action = $_POST['action'];
+    $name = htmlspecialchars($_POST['name'],ENT_QUOTES);
+    $email = htmlspecialchars($_POST['email'],ENT_QUOTES);
+    $message = htmlspecialchars($_POST['message'],ENT_QUOTES);
 
-$error = '';
-if ($name == '') {
-    $error = $error.'<p>no name</p>';
-}
-if ($email == '') {
-    $error = $error.'<p>no email</p>';
-}
-if ($message == '') {
-    $error = $error.'<p>no message</p>';
-}
-if ($error != '') {
-    echo $error;
-    
-    echo '<form method="post" action="../view/contact.php">';
-    echo '<input type="submit" name="backbtn" value=" back to the contact">';
-    echo '</form>';
-} else {
-    $mail .= "以下の内容が送信されました。\n\n";
-    $mail .= "【name】\n";
-    $mail .= $name."\n\n";
-    $mail .= "【email】\n";
-    $mail .= $email."\n\n";
-    $mail .= "【message】\n";
-    $mail .= $message."\n\n";
-    
-    //日本語設定を行う
-    mb_language("Japanese");
-    mb_internal_encoding("UTF-8");
-
-    $mail_to    = "rikuriku092677@gmail.com";          //送信先メールアドレス
-    $mail_subject   = "rikuのポートフォリオ侵入者からメッセージが届きました";   //メールの件名
-    $mail_body  = $mail;                //メールの本文
-    $mail_header    = "from:"."riku.portfolio@gmail.com";           //フォームで入力されたメールアドレスを送信元として表示する
-    
-    $mailsend = mb_send_mail($mail_to, $mail_subject, $mail_body, $mail_header);
-    
-    if($mailsend == true) {
-        echo '<p>Thank you for the message</p>';
+    $error = '';
+    if ($name == '') {
+        $error = $error.'<p>no name</p>';
+    }
+    if ($email == '') {
+        $error = $error.'<p>no email</p>';
+    }
+    if ($message == '') {
+        $error = $error.'<p>no message</p>';
+    }
+    if ($error != '') {
+        echo $error;
+        
         echo '<form method="post" action="../view/contact.php">';
         echo '<input type="submit" name="backbtn" value=" back to the contact">';
         echo '</form>';
     } else {
-        echo '<p>Email has error。</p>';
-        echo '<form method="post" action="../view/contact.php">';
-        echo '<input type="submit" name="backbtn" value=" back to the contact">';
-        echo '</form>';
+        $mail .= "以下の内容が送信されました。\n\n";
+        $mail .= "【name】\n";
+        $mail .= $name."\n\n";
+        $mail .= "【email】\n";
+        $mail .= $email."\n\n";
+        $mail .= "【message】\n";
+        $mail .= $message."\n\n";
+        
+        //日本語設定を行う
+        mb_language("Japanese");
+        mb_internal_encoding("UTF-8");
+
+        $mail_to    = "rikuriku092677@gmail.com";          //送信先メールアドレス
+        $mail_subject   = "rikuのポートフォリオ侵入者からメッセージが届きました";   //メールの件名
+        $mail_body  = $mail;                //メールの本文
+        $mail_header    = "from:"."riku.portfolio@gmail.com";           //フォームで入力されたメールアドレスを送信元として表示する
+        
+        $mailsend = mb_send_mail($mail_to, $mail_subject, $mail_body, $mail_header);
+        
+        if($mailsend == true) {
+            echo '<p>Thank you for the message</p>';
+            echo '<form method="post" action="../view/contact.php">';
+            echo '<input type="submit" name="backbtn" value=" back to the contact">';
+            echo '</form>';
+        } else {
+            echo '<p>Email has error。</p>';
+            echo '<form method="post" action="../view/contact.php">';
+            echo '<input type="submit" name="backbtn" value=" back to the contact">';
+            echo '</form>';
+        }
     }
-}
 ?>
 
         </div>
@@ -103,7 +103,6 @@ if ($error != '') {
     </div>
     <script src="../js/contact.js"></script>
     <script src="../js/common.js"></script>
-
 
 </body>
 </html>
