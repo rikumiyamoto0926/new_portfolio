@@ -28,7 +28,7 @@
 
         <div class="Middle">
 
-        <!-- <?php
+        <?php
 $action = $_POST['action'];
 $name = htmlspecialchars($_POST['name'],ENT_QUOTES);
 $email = htmlspecialchars($_POST['email'],ENT_QUOTES);
@@ -82,7 +82,7 @@ if ($error != '') {
         echo '</form>';
     }
 }
-?> -->
+?>
 
         </div>
 
