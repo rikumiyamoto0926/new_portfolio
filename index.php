@@ -1,3 +1,3 @@
 <?php
-include_once('../new_portfolio/view/start.php');
+include_once('/view/start.php');
 ?>
