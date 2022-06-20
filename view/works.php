@@ -11,8 +11,8 @@
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-    <link rel="stylesheet" href="/new_portfolio/css/destryle.css">
-    <link rel="stylesheet" href="/new_portfolio/css/common.css">
+    <link rel="stylesheet" href="../css/destryle.css">
+    <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/works.css">
     <title>Document</title>
 </head>

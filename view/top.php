@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/new_portfolio/css/destryle.css">
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="/new_portfolio/css/top.css">
+    <link rel="stylesheet" href="../css/top.css">
     <title>RIKU.宮本</title>
 </head>
 <body>
