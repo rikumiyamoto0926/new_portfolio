@@ -37,17 +37,17 @@
 
             <ul class="slide-items">
                 <li><img src="../img/works/page1.png" alt="模写ポートフォリオ">
-                    <a href="https://www.bariuma.biz/" class="mask">
+                    <a href="https://rikumiyamoto0926.github.io/my_portfolio/" class="mask">
                         <div class="caption">模写ポートフォリオ</div>
                     </a>
                 </li>
                 <li><img src="../img/works/page2.png" alt="Twitterクローン">
-                    <a href="https://www.bariuma.biz/" class="mask">
+                    <a  class="mask">
                         <div class="caption">Twitterクローン</div>
                     </a>
                 </li>
                 <li><img src="../img/works/page3.png" alt="イベント管理システム">
-                    <a href="https://www.bariuma.biz/" class="mask">
+                    <a  class="mask">
                         <div class="caption">イベント管理システム</div>
                     </a>
                 </li>
