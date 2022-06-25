@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../css/destryle.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/works.css">
-    <title>Document</title>
+    <title>RIKU.宮本</title>
 </head>
 <body>
     <div class="background">
