@@ -47,7 +47,7 @@
                     </a>
                 </li>
                 <li><img src="../img/works/page3.png" alt="イベント管理システム">
-                    <a  class="mask">
+                    <a  href="http://team62.herokuapp.com/login" class="mask">
                         <div class="caption">イベント管理システム</div>
                     </a>
                 </li>
